@@ -1,0 +1,102 @@
+*{
+            box-sizing: border-box;
+            background-color: cyan;
+        }
+
+        h1{
+            text-align: center;
+            font-size: 1.75em;
+            margin: 15px;
+        }
+
+        .div1, .div2, .div3{
+            position: relative;
+            background-color: red;
+            border : 2px solid black;
+            margin-right: 10px;
+            margin-bottom: 10px;
+                    
+        }
+
+        .relative{
+            position: relative;
+            height: 20px;
+            background-color: red;
+            margin-bottom: 10px;
+        }
+         
+        h2{ 
+            display: inline;
+            position: absolute;
+            text-align: center;
+            background-color: green;
+            color: white;
+            top:0;
+            right: 0;
+            border: 2px solid black;
+            margin-top: 0px;
+            margin-bottom: 5px;
+            padding: 5px;
+            font-size: 1.25em;
+
+        }
+
+        .row::after {
+          content: "";
+          clear: both;
+          display: table;
+        }
+
+        [class*="col-"] {
+          float: left;
+          padding: 0 0 15px 15px; 
+           width: 100%; 
+         }
+
+         p{
+            
+            font-family:"Times New Roman", Times, serif;
+            color: white;
+            background-color:red;
+            margin-top: 15px;
+            padding: 10px;
+            
+        }
+
+        @media (min-width: 992px) {
+
+        .col-lg-1 {width: 8.33%;}
+        .col-lg-2 {width: 16.66%;}
+        .col-lg-3 {width: 32.3%;}
+        .col-lg-4 {width: 33.33%;}
+        .col-lg-5 {width: 41.66%;}
+        .col-lg-6 {width: 50%;}
+        .col-lg-7 {width: 58.33%;}
+        .col-lg-8 {width: 66.66%;}
+        .col-lg-9 {width: 75%;}
+        .col-lg-10 {width: 83.33%;}
+        .col-lg-11 {width: 91.66%;}
+        .col-lg-12 {width: 100%;}
+
+        }
+
+        @media(min-width: 768px) and (max-width: 991px){
+            .div2{float:right;}
+            .col-md-1 {width: 8.33%;}
+            .col-md-2 {width: 16.66%;}
+            .col-md-3 {width: 25%;}
+            .col-md-4 {width: 33.33%;}
+            .col-md-5 {width: 41.66%;}
+            .col-md-13 {width: 48%;}
+            .col-md-6 {width: 50%;}
+            .col-md-7 {width: 58.33%;}
+            .col-md-8 {width: 66.66%;}
+            .col-md-9 {width: 75%;}
+            .col-md-10 {width: 83.33%;}
+            .col-md-11 {width: 91.66%;}
+            .col-md-12 {width: 100%;}
+            .div3{width: 100%;}
+
+        }
+
+            
